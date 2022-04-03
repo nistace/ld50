@@ -170,6 +170,216 @@ TextureImporter:
   - first:
       213: -7601780426631337928
     second: pirates_55
+  - first:
+      213: 2974207935636237881
+    second: pirates_56
+  - first:
+      213: 1345554837603431702
+    second: pirates_57
+  - first:
+      213: 1958149166790815866
+    second: pirates_58
+  - first:
+      213: -1395277603740507749
+    second: pirates_59
+  - first:
+      213: 2621134401270722377
+    second: pirates_60
+  - first:
+      213: 5217121213734232079
+    second: pirates_61
+  - first:
+      213: 740615808744877566
+    second: pirates_62
+  - first:
+      213: 1260920733101810717
+    second: pirates_63
+  - first:
+      213: -7544471280766918563
+    second: pirates_64
+  - first:
+      213: -2506777446584265410
+    second: pirates_65
+  - first:
+      213: -2746367438525232639
+    second: pirates_66
+  - first:
+      213: -6512605587089935042
+    second: pirates_67
+  - first:
+      213: -8771857002282239109
+    second: pirates_68
+  - first:
+      213: -7628686786601627237
+    second: pirates_69
+  - first:
+      213: -5524493593561183082
+    second: pirates_70
+  - first:
+      213: -4851902549779837966
+    second: pirates_71
+  - first:
+      213: 1316308381970872032
+    second: pirates_72
+  - first:
+      213: 6552796510015459316
+    second: pirates_73
+  - first:
+      213: -1045939414431851143
+    second: pirates_74
+  - first:
+      213: 6037391998436896657
+    second: pirates_75
+  - first:
+      213: 876619270417809594
+    second: pirates_76
+  - first:
+      213: -4109122168303661225
+    second: pirates_77
+  - first:
+      213: -6087719186524728602
+    second: pirates_78
+  - first:
+      213: 5601818458478017164
+    second: pirates_79
+  - first:
+      213: -3643843143343390737
+    second: pirates_80
+  - first:
+      213: 1200647808998855888
+    second: pirates_81
+  - first:
+      213: -6105226967685610549
+    second: pirates_82
+  - first:
+      213: 7963994948800047112
+    second: pirates_83
+  - first:
+      213: -3423774693401154172
+    second: pirates_84
+  - first:
+      213: -4811277984817905481
+    second: pirates_85
+  - first:
+      213: 3444765846766522173
+    second: pirates_86
+  - first:
+      213: -7894501284925625496
+    second: pirates_87
+  - first:
+      213: -4976507562281577117
+    second: pirates_88
+  - first:
+      213: 5540216349488334234
+    second: pirates_89
+  - first:
+      213: -2596052990105739232
+    second: pirates_90
+  - first:
+      213: -8240831896079054756
+    second: pirates_91
+  - first:
+      213: 6372650840190053512
+    second: pirates_92
+  - first:
+      213: -7725025980724366767
+    second: pirates_93
+  - first:
+      213: 7039153308224700915
+    second: pirates_94
+  - first:
+      213: -7007210059206717675
+    second: pirates_95
+  - first:
+      213: -1510784749657306770
+    second: pirates_96
+  - first:
+      213: 4525817704027813761
+    second: pirates_97
+  - first:
+      213: -4306986288471305673
+    second: pirates_98
+  - first:
+      213: -6344735307696578823
+    second: pirates_99
+  - first:
+      213: 951139802047199323
+    second: pirates_100
+  - first:
+      213: 9201941793172843303
+    second: pirates_101
+  - first:
+      213: 7780845173809382015
+    second: pirates_102
+  - first:
+      213: -1044012689226451231
+    second: pirates_103
+  - first:
+      213: -8825605036319110720
+    second: pirates_104
+  - first:
+      213: 3719722164733971107
+    second: pirates_105
+  - first:
+      213: 7719877539023045472
+    second: pirates_106
+  - first:
+      213: -2851633286307902831
+    second: pirates_107
+  - first:
+      213: -7629280836058472493
+    second: pirates_108
+  - first:
+      213: -364843208141514680
+    second: pirates_109
+  - first:
+      213: -3323483516698754382
+    second: pirates_110
+  - first:
+      213: 3257769617324944222
+    second: pirates_111
+  - first:
+      213: -537360015412952364
+    second: pirates_112
+  - first:
+      213: -4196826550944124172
+    second: pirates_113
+  - first:
+      213: -2099404340718941231
+    second: pirates_114
+  - first:
+      213: -1635534521182145526
+    second: pirates_115
+  - first:
+      213: -850466937900502483
+    second: pirates_116
+  - first:
+      213: 7191380487697782305
+    second: pirates_117
+  - first:
+      213: -376364943330735771
+    second: pirates_118
+  - first:
+      213: -7609918480615092175
+    second: pirates_119
+  - first:
+      213: 724411531184176418
+    second: pirates_120
+  - first:
+      213: -6707284394025746315
+    second: pirates_121
+  - first:
+      213: 2000450107766317513
+    second: pirates_122
+  - first:
+      213: -1956411337341881196
+    second: pirates_123
+  - first:
+      213: 3150159208361295692
+    second: pirates_124
+  - first:
+      213: -4613027546025783011
+    second: pirates_125
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -287,7 +497,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -308,7 +518,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -329,7 +539,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -350,7 +560,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 55
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -371,7 +581,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 73
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -392,7 +602,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -413,7 +623,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 109
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -434,7 +644,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 127
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -455,7 +665,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 145
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -476,7 +686,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 163
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -497,7 +707,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 181
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -518,7 +728,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -539,7 +749,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 217
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -560,7 +770,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 235
-        y: 55
+        y: 145
         width: 16
         height: 16
       alignment: 7
@@ -581,7 +791,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -602,7 +812,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -623,7 +833,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -644,7 +854,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 55
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -665,7 +875,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 73
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -686,7 +896,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -707,7 +917,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 109
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -728,7 +938,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 127
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -749,7 +959,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 145
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -770,7 +980,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 163
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -791,7 +1001,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 181
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -812,7 +1022,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -833,7 +1043,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 217
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -854,7 +1064,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 235
-        y: 37
+        y: 127
         width: 16
         height: 16
       alignment: 7
@@ -875,7 +1085,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -896,7 +1106,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -917,7 +1127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -938,7 +1148,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 55
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -959,7 +1169,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 73
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -980,7 +1190,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -1001,7 +1211,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 109
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -1022,7 +1232,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 127
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -1043,7 +1253,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 145
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -1064,7 +1274,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 163
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -1085,7 +1295,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 181
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -1106,7 +1316,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -1127,7 +1337,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 217
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -1148,7 +1358,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 235
-        y: 19
+        y: 109
         width: 16
         height: 16
       alignment: 7
@@ -1169,7 +1379,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1190,7 +1400,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1211,7 +1421,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 37
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1232,7 +1442,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 55
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1253,7 +1463,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 73
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1274,7 +1484,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1295,7 +1505,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 109
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1316,7 +1526,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 127
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1337,7 +1547,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 145
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1358,7 +1568,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 163
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1379,7 +1589,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 181
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1400,7 +1610,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1421,7 +1631,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 217
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1442,7 +1652,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 235
-        y: 1
+        y: 91
         width: 16
         height: 16
       alignment: 7
@@ -1454,6 +1664,1476 @@ TextureImporter:
       bones: []
       spriteID: 8382f1a5afc018690800000000000000
       internalID: -7601780426631337928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_56
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93eeeb30c52864920800000000000000
+      internalID: 2974207935636237881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_57
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6153929eefe5ca210800000000000000
+      internalID: 1345554837603431702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_58
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a703bcfda4ebc2b10800000000000000
+      internalID: 1958149166790815866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_59
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b912df1796af2ace0800000000000000
+      internalID: -1395277603740507749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_60
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f2c40c9d3206420800000000000000
+      internalID: 2621134401270722377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_61
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00a8c63a10f66840800000000000000
+      internalID: 5217121213734232079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_62
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efde6437722374a00800000000000000
+      internalID: 740615808744877566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_63
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d146572e9b0bf7110800000000000000
+      internalID: 1260920733101810717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_64
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5060cba757ac4790800000000000000
+      internalID: -7544471280766918563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_65
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35526d9133263dd0800000000000000
+      internalID: -2506777446584265410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_66
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a01049d51f2e9d0800000000000000
+      internalID: -2746367438525232639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_67
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35b74b49b39e95a0800000000000000
+      internalID: -6512605587089935042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_68
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7bb17e188a144680800000000000000
+      internalID: -8771857002282239109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_69
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 73
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91d4ed39c5712690800000000000000
+      internalID: -7628686786601627237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_70
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c4ddfb85e0553b0800000000000000
+      internalID: -5524493593561183082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_71
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb8f8366549aacb0800000000000000
+      internalID: -4851902549779837966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_72
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e63e32df77744210800000000000000
+      internalID: 1316308381970872032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_73
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff04e825b530fa50800000000000000
+      internalID: 6552796510015459316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_74
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d953ae4a31c71f0800000000000000
+      internalID: -1045939414431851143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_75
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fed9cf80029c350800000000000000
+      internalID: 6037391998436896657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_76
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab00488f4906a2c00800000000000000
+      internalID: 876619270417809594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_77
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fc393b82779f6c0800000000000000
+      internalID: -4109122168303661225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_78
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e21dda67a3148ba0800000000000000
+      internalID: -6087719186524728602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_79
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8afec15538adbd40800000000000000
+      internalID: 5601818458478017164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_80
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef36cf87f77e6dc0800000000000000
+      internalID: -3643843143343390737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_81
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d45abb22de89a010800000000000000
+      internalID: 1200647808998855888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_82
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3c6f57b60e54ba0800000000000000
+      internalID: -6105226967685610549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_83
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 55
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8086b3cf53bc58e60800000000000000
+      internalID: 7963994948800047112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_84
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d2ad86e0f4c70d0800000000000000
+      internalID: -3423774693401154172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_85
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0854ff928ea3db0800000000000000
+      internalID: -4811277984817905481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_86
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f8ae659444ecf20800000000000000
+      internalID: 3444765846766522173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_87
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ba42188e8117290800000000000000
+      internalID: -7894501284925625496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_88
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36559202db4efeab0800000000000000
+      internalID: -4976507562281577117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_89
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a954012aa6dc2ec40800000000000000
+      internalID: 5540216349488334234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_90
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02028aa5f87f8fbd0800000000000000
+      internalID: -2596052990105739232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_91
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58cf746d0fa2ad80800000000000000
+      internalID: -8240831896079054756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_92
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c6f17ec24307850800000000000000
+      internalID: 6372650840190053512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_93
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152b24aacc13bc490800000000000000
+      internalID: -7725025980724366767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_94
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1cf3883a810b160800000000000000
+      internalID: 7039153308224700915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_95
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f8072b39361ce90800000000000000
+      internalID: -7007210059206717675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_96
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e694990564d980be0800000000000000
+      internalID: -1510784749657306770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_97
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 37
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18770c6193feece30800000000000000
+      internalID: 4525817704027813761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_98
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732903f3ac28a34c0800000000000000
+      internalID: -4306986288471305673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_99
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9feddde7ad8f2f7a0800000000000000
+      internalID: -6344735307696578823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_100
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5832c05c90233d00800000000000000
+      internalID: 951139802047199323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_101
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b63e19e4dd3bf70800000000000000
+      internalID: 9201941793172843303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_102
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72883df57d1bfb60800000000000000
+      internalID: 7780845173809382015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_103
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e638a59dfbe281f0800000000000000
+      internalID: -1044012689226451231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_104
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c90d42caf6258580800000000000000
+      internalID: -8825605036319110720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_105
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa8d14d99b1f9330800000000000000
+      internalID: 3719722164733971107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_106
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0634cf658b3822b60800000000000000
+      internalID: 7719877539023045472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_107
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a00fb72a6fc68d0800000000000000
+      internalID: -2851633286307902831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_108
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df1a0350895f1690800000000000000
+      internalID: -7629280836058472493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_109
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848d2040901dfeaf0800000000000000
+      internalID: -364843208141514680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_110
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b20e42a95d90e1d0800000000000000
+      internalID: -3323483516698754382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_111
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 19
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ba6b0e43ce53d20800000000000000
+      internalID: 3257769617324944222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_112
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d200dcb9e9ea88f0800000000000000
+      internalID: -537360015412952364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_113
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f23c07dc70e1c5c0800000000000000
+      internalID: -4196826550944124172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_114
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbc88f00ea6dd2e0800000000000000
+      internalID: -2099404340718941231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_115
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04bc07b40a6d49e0800000000000000
+      internalID: -1635534521182145526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_116
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22f93173d88234f0800000000000000
+      internalID: -850466937900502483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_117
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126d6e5b37aecc360800000000000000
+      internalID: 7191380487697782305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_118
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5698cdef312e6caf0800000000000000
+      internalID: -376364943330735771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_119
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130d1410673246690800000000000000
+      internalID: -7609918480615092175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_120
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22dfd631370ad0a00800000000000000
+      internalID: 724411531184176418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_121
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570039e5160fae2a0800000000000000
+      internalID: -6707284394025746315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_122
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1ad4036c603cb10800000000000000
+      internalID: 2000450107766317513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_123
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494b033114e69d4e0800000000000000
+      internalID: -1956411337341881196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_124
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ffc481c1d97bb20800000000000000
+      internalID: 3150159208361295692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pirates_125
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1
+        width: 16
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d119a0443eb3bffb0800000000000000
+      internalID: -4613027546025783011
       vertices: []
       indices: 
       edges: []

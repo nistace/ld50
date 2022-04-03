@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
@@ -5,6 +6,14 @@ using UnityEngine;
 namespace Ld50.Ships {
 	public class ShipPathSystem : MonoBehaviour {
 		[SerializeField] protected ShipPathLink[] _links;
+
+		private List<ShipPathNode>        nodes    { get; } = new List<ShipPathNode>();
+		public  IEnumerable<ShipPathNode> allNodes => nodes;
+
+		public void Initialize() {
+			nodes.Clear();
+			nodes.AddRange(_links.SelectMany(t => new[] { t.firstNode, t.secondNode }).Distinct());
+		}
 
 		public bool TryGetPath(ShipPathNode from, ShipPathNode to, out ShipPath path, ShipPathLink origin = null) {
 			if (from == to) {
@@ -38,11 +47,12 @@ namespace Ld50.Ships {
 				Gizmos.DrawLine(link.firstNode.position, link.secondNode.position);
 			}
 
-			foreach (var node in _links.SelectMany(t => new[] { t.firstNode, t.secondNode }).Distinct()) {
+			var displayNodes = this.nodes.Count > 0 ? this.nodes : _links.SelectMany(t => new[] { t.firstNode, t.secondNode }).Distinct();
+			foreach (var node in displayNodes) {
 				Gizmos.color = Selection.activeGameObject == node.gameObject ? Color.magenta : Color.cyan;
 				var textStyle = new GUIStyle { normal = { textColor = Selection.activeGameObject == node.gameObject ? Color.magenta : Color.cyan } };
 				Gizmos.DrawSphere(node.position, .1f);
-				Handles.Label(node.position + new Vector2(0, .3f), node.pointOfInterest ? node.nodeName.ToUpper() : node.nodeName.ToLower(), textStyle);
+				Handles.Label(node.position + new Vector2(0, .3f), node.name, textStyle);
 			}
 		}
 #endif
