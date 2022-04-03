@@ -107,7 +107,8 @@ MonoBehaviour:
     - {x: 17, y: 20}
     - {x: 13, y: 16}
     - {x: 21, y: 22}
-    - {x: 4, y: 4}
+    - {x: 23, y: 24}
+    - {x: 25, y: 26}
     _animationSpeeds:
     - 1
     - 10
@@ -116,9 +117,10 @@ MonoBehaviour:
     - 5
     - 1
     - 1
+    - 5
     - 1
   _pirateIndex: 0
-  _animationsPerPirate: 23
+  _animationsPerPirate: 27
   _animation: 0
 --- !u!1 &5115496303614101243
 GameObject:

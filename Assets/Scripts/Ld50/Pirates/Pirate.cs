@@ -3,8 +3,11 @@ using Ld50;
 using Ld50.Ships;
 using Ld50.Text;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Pirate : MonoBehaviour, ITextInteractable {
+	public class ImpossibleTaskEvent : UnityEvent<Pirate, ImpossibleTaskReason> { }
+
 	[SerializeField] protected ShipPathNode   _initialNode;
 	[SerializeField] protected ShipNodeTask   _assignment;
 	[SerializeField] protected ShipPath       _path;
@@ -15,19 +18,25 @@ public class Pirate : MonoBehaviour, ITextInteractable {
 	public Sprite  interactableIdeaSprite => _renderer.GetDefaultSprite();
 	public Vector2 worldPosition          => position;
 
+	public enum ImpossibleTaskReason {
+		NoPlank
+	}
+
 	private Vector2 position {
 		get => transform.position;
 		set => transform.position = value;
 	}
 
+	public static ImpossibleTaskEvent onImpossibleTask { get; } = new ImpossibleTaskEvent();
+
 	private void Start() {
-		if (_initialNode.TryGetComponent<ShipNodeTask>(out var nodeTask)) Reassign(nodeTask);
 		position = _initialNode.position;
+		if (_initialNode.TryGetComponent<ShipNodeTask>(out var nodeTask)) Reassign(nodeTask);
 	}
 
 	public void Reassign(ShipNodeTask newAssignment) {
 		CancelAssignment();
-		if (newAssignment && Ship.pathSystem.TryGetPath(_path?.currentNode ?? _initialNode, newAssignment.pathNode, out var path)) {
+		if (newAssignment && Ship.pathSystem.TryGetPath(Ship.pathSystem.GetClosestNode(transform.localPosition), newAssignment.pathNode, out var path)) {
 			_assignment = newAssignment;
 			_assignment.Claim();
 			_path = path;
@@ -47,6 +56,9 @@ public class Pirate : MonoBehaviour, ITextInteractable {
 		if (_path == null) return;
 		if (_path.destinationReached) {
 			_assignment.Progress();
+			if (_assignment.status == ShipNodeTask.Status.Completed) {
+				CancelAssignment();
+			}
 			return;
 		}
 
@@ -54,6 +66,17 @@ public class Pirate : MonoBehaviour, ITextInteractable {
 			_path.ProgressToNextNode();
 			if (_path.destinationReached) {
 				_renderer.lookLeft = false;
+
+				if (_assignment.plankRequired && !_assignment.hasProgress) {
+					if (Ship.taskManager.plankCount > 0) {
+						Ship.taskManager.ConsumePlank();
+					}
+					else {
+						CancelAssignment();
+						onImpossibleTask.Invoke(this, ImpossibleTaskReason.NoPlank);
+						return;
+					}
+				}
 				_renderer.animation = GetTaskAnimation(_assignment.type);
 				return;
 			}
@@ -61,7 +84,7 @@ public class Pirate : MonoBehaviour, ITextInteractable {
 
 		_renderer.lookLeft = _path.nextNodeLocalPosition.x < position.x;
 		_renderer.animation = GetLinkAnimation(_path.nextNodeLinkType);
-		position = Vector2.MoveTowards(position, _path.nextNodeLocalPosition, _speed * Time.deltaTime);
+		position = Vector2.MoveTowards(position, _path.nextNodeLocalPosition, Ship.taskManager.morale * _speed * Time.deltaTime);
 	}
 
 	private static PirateAnimationSet.Animation GetTaskAnimation(ShipNodeTask.Type shipTaskType) {
@@ -70,7 +93,7 @@ public class Pirate : MonoBehaviour, ITextInteractable {
 			case ShipNodeTask.Type.Tiller: return PirateAnimationSet.Animation.Till;
 			case ShipNodeTask.Type.FishPlanks: return PirateAnimationSet.Animation.FishPlanks;
 			case ShipNodeTask.Type.LookOut: return PirateAnimationSet.Animation.LookOut;
-			case ShipNodeTask.Type.Pump: return PirateAnimationSet.Animation.Idle;
+			case ShipNodeTask.Type.Pump: return PirateAnimationSet.Animation.Pump;
 			case ShipNodeTask.Type.Repair: return PirateAnimationSet.Animation.Repair;
 			case ShipNodeTask.Type.Accordion: return PirateAnimationSet.Animation.PlayAccordion;
 			default: throw new ArgumentOutOfRangeException(nameof(shipTaskType), shipTaskType, null);

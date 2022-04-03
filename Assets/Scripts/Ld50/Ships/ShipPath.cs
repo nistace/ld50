@@ -10,7 +10,7 @@ namespace Ld50.Ships {
 
 		public bool                  destinationReached    => _nextNodeIndex >= _nodes.Length;
 		public Vector2               nextNodeLocalPosition => _nodes[_nextNodeIndex].position;
-		public ShipPathLink.LinkType nextNodeLinkType      => _links[_nextNodeIndex - 1];
+		public ShipPathLink.LinkType nextNodeLinkType      => _nextNodeIndex == 0 ? ShipPathLink.LinkType.Walk : _links[_nextNodeIndex - 1];
 		public ShipPathNode          currentNode           => _nodes.Length > 0 ? _nodes[Mathf.Min(_nextNodeIndex, _nodes.Length - 1)] : null;
 
 		public ShipPath(ShipPathNode firstNode, ShipPathLink.LinkType firstNodeLinkType, ShipPath then) {

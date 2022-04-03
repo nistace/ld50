@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6659d3c27669407695364196940a6487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _lastNode: 0
 --- !u!114 &7840339423438742734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,5 +62,23 @@ MonoBehaviour:
   _status: 0
   _interactionText: Seal this hole!
   _interactionIdeaSprite: {fileID: 2825355477900931520, guid: 6a9c402855169424886d0a24a4695064, type: 3}
-  _progressSpeed: 0.1
+  _progressSpeed: 0.2
   _progress: 0
+  _sfxFrequency: 2
+  _plankRequired: 1
+  _interactionTexts:
+  - Seal this hole!
+  - Seal that hole!
+  - Seal this crack!
+  - Seal that crack!
+  - Fix the hull!
+  - Repair the hull!
+  - Fix that hole!
+  - Fix that crack!
+  - Repair that hole!
+  - Seal that breach!
+  - Repair this breach!
+  - Repair that fissure!
+  - Seal this gap!
+  - Fix the damage!
+  - Repair the damage!

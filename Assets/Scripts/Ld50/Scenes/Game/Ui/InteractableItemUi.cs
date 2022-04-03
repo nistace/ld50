@@ -8,7 +8,9 @@ namespace Ld50.Scenes.Game.Ui {
 		[SerializeField] protected FollowUi _follow;
 		[SerializeField] protected TMP_Text _text;
 		[SerializeField] protected Color    _highlightColor = new Color(1, .5f, 0);
+		[SerializeField] protected bool     _over;
 
+		public  bool                                     over   => _over;
 		private TextInputManager.ITextInteractableOption option { get; set; }
 
 		public void SetInteractable(TextInputManager.ITextInteractableOption option) {

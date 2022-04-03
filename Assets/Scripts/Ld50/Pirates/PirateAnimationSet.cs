@@ -15,7 +15,8 @@ namespace Ld50 {
 			PlayAccordion = 4,
 			Till          = 5,
 			FishPlanks    = 6,
-			Repair
+			Repair        = 7,
+			Pump          = 8
 		}
 
 		public int GetCorrectedFrame(Animation animation, int offset) {

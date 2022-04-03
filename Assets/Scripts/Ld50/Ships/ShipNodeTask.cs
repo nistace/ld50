@@ -1,10 +1,13 @@
-﻿using System;
-using Ld50.Text;
+﻿using Ld50.Text;
 using UnityEngine;
+using UnityEngine.Events;
+using Utils.Audio;
 
 namespace Ld50.Ships {
 	[RequireComponent(typeof(ShipPathNode))]
 	public class ShipNodeTask : MonoBehaviour, ITextInteractable {
+		public class Event : UnityEvent<ShipNodeTask> { }
+
 		[SerializeField] protected ShipPathNode _pathNode;
 		[SerializeField] protected Type         _type;
 		[SerializeField] protected Status       _status = Status.Waiting;
@@ -12,6 +15,9 @@ namespace Ld50.Ships {
 		[SerializeField] protected Sprite       _interactionIdeaSprite;
 		[SerializeField] protected float        _progressSpeed;
 		[SerializeField] protected float        _progress;
+		[SerializeField] protected float        _sfxFrequency = -1;
+		[SerializeField] protected bool         _plankRequired;
+		[SerializeField] protected string[]     _interactionTexts;
 
 		public enum Type {
 			None       = 0,
@@ -30,27 +36,42 @@ namespace Ld50.Ships {
 			Completed  = 3
 		}
 
-		public ShipPathNode pathNode               => _pathNode ? _pathNode : _pathNode = GetComponent<ShipPathNode>();
-		public Type         type                   => _type;
-		public Status       status                 => _status;
-		public string       interactableText       => _interactionText;
-		public Sprite       interactableIdeaSprite => _interactionIdeaSprite;
+		public  ShipPathNode pathNode               => _pathNode ? _pathNode : _pathNode = GetComponent<ShipPathNode>();
+		public  Type         type                   => _type;
+		public  Status       status                 => _status;
+		public  string       interactableText       => _interactionText;
+		public  Sprite       interactableIdeaSprite => _interactionIdeaSprite;
+		public  bool         plankRequired          => _plankRequired;
+		private float        nextSfxTime            { get; set; }
+		public  bool         hasProgress            => _progress > 0f;
+		public  string[]     interactionTexts       => _interactionTexts;
 
-		private void Reset() => Reset(type);
+		public UnityEvent onCompleted { get; } = new UnityEvent();
 
-		public void Reset(Type type) {
+		private void Reset() => Reset(type, string.Empty);
+
+		public void Reset(Type type, string interactionText) {
 			_type = type;
 			_pathNode = pathNode;
 			_status = Status.Waiting;
+			_interactionText = interactionText;
 		}
 
 		public void Claim() => _status = Status.Claimed;
 		public void Quit() => _status = Status.Waiting;
 
 		public void Progress() {
+			if (_status == Status.Completed) return;
 			_status = Status.InProgress;
-			_progress += _progressSpeed * Time.deltaTime;
-			if (_progress >= 1) _status = Status.Completed;
+			_progress += Ship.taskManager.morale * _progressSpeed * Time.deltaTime;
+			if (_sfxFrequency > 0 && Time.time > nextSfxTime) {
+				AudioManager.Sfx.PlayRandom($"{type}");
+				nextSfxTime = Time.time + 1 / _sfxFrequency;
+			}
+			if (_progress >= 1) {
+				_status = Status.Completed;
+				onCompleted.Invoke();
+			}
 		}
 	}
 }

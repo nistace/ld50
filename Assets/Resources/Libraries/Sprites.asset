@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5817a673a8c4625ae77cbb1e14ed20b, type: 3}
+  m_Name: Sprites
+  m_EditorClassIdentifier: 
+  _id:
+    _value: 2
+  _defaultItem: {fileID: 0}
+  _orderIndex: 0
+  _itemNames:
+  - pirate.impossibleTask.noPlank
+  _items:
+  - {fileID: -675163801838483326, guid: 6a9c402855169424886d0a24a4695064, type: 3}

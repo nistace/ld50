@@ -17,6 +17,15 @@ namespace Ld50.Ships {
 			Climb = 1,
 		}
 
+		public ShipPathLink() { }
+
+		public ShipPathLink(ShipPathNode firstNode, ShipPathNode secondNode, LinkType type) {
+			_firstNode = firstNode;
+			_secondNode = secondNode;
+			_type = type;
+		}
+
 		public bool Contains(ShipPathNode node) => _firstNode == node || _secondNode == node;
+		public ShipPathNode Other(ShipPathNode than) => than == firstNode ? secondNode : firstNode;
 	}
 }

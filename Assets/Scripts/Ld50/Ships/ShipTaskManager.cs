@@ -2,34 +2,34 @@
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
+using Utils.Extensions;
 
 namespace Ld50.Ships {
 	public class ShipTaskManager : MonoBehaviour {
-		[SerializeField]                        protected bool         _running;
-		[SerializeField]                        protected ShipNodeTask _taskNodePrefab;
-		[Header("Morale"), SerializeField]      protected float        _minMorale      = .5f;
-		[SerializeField]                        protected float        _maxMorale      = 1.3f;
-		[SerializeField]                        protected float        _baseMorale     = 1;
-		[SerializeField]                        protected float        _moraleBonus    = .01f;
-		[Header("Ship Speed"), SerializeField]  protected float        _minShipSpeed   = 5f;
-		[SerializeField]                        protected float        _maxShipSpeed   = 25f;
-		[SerializeField]                        protected float        _baseShipSpeed  = 5f;
-		[SerializeField]                        protected float        _shipSpeedBonus = 1f;
-		[SerializeField]                        protected float        _distanceTravelled;
-		[Header("Enemy Ships"), SerializeField] protected float        _enemyShipDelay           = 30f;
-		[SerializeField]                        protected float        _detectionDelayMultiplier = 1.5f;
-		[SerializeField]                        protected float        _nextEnemyShipCooldown;
-		[Header("Planks"), SerializeField]      protected int          _basePlankCount = 4;
-		[Header("Sinking"), SerializeField]     protected float        _sinkingPerHole = .01f;
-		[SerializeField]                        protected float        _pumpBoost      = .02f;
+		[SerializeField]                        protected bool           _running;
+		[SerializeField]                        protected float          _runningTime;
+		[SerializeField]                        protected ShipNodeTask   _taskNodePrefab;
+		[Header("Morale"), SerializeField]      protected float          _minMorale      = .5f;
+		[SerializeField]                        protected float          _maxMorale      = 1.3f;
+		[SerializeField]                        protected float          _baseMorale     = 1;
+		[SerializeField]                        protected float          _moraleBonus    = .01f;
+		[Header("Ship Speed"), SerializeField]  protected float          _minShipSpeed   = 5f;
+		[SerializeField]                        protected float          _maxShipSpeed   = 25f;
+		[SerializeField]                        protected float          _baseShipSpeed  = 5f;
+		[SerializeField]                        protected float          _shipSpeedBonus = 1f;
+		[SerializeField]                        protected float          _distanceTravelled;
+		[Header("Enemy Ships"), SerializeField] protected float          _enemyShipDelay           = 30f;
+		[SerializeField]                        protected float          _detectionDelayMultiplier = 1.5f;
+		[SerializeField]                        protected float          _nextEnemyShipCooldown;
+		[Header("Planks"), SerializeField]      protected int            _basePlankCount = 4;
+		[SerializeField]                        protected ShipFishingRod _rod;
+		[Header("Sinking"), SerializeField]     protected float          _sinkingPerHole = .01f;
+		[SerializeField]                        protected float          _pumpBoost      = .02f;
 
 		[SerializeField] protected List<ShipNodeTask> _tasks = new List<ShipNodeTask>();
 
-		public bool running {
-			get => _running;
-			set => _running = value;
-		}
-
+		public float runningTime          => _runningTime;
 		public float morale               { get; private set; }
 		public float minMorale            => _minMorale;
 		public float maxMorale            => _maxMorale;
@@ -42,7 +42,12 @@ namespace Ld50.Ships {
 		public float sinkingSpeed         { get; private set; }
 		public float distanceTravelled    => _distanceTravelled;
 
-		public static UnityEvent onEnemyShipDelayReachedZero { get; } = new UnityEvent();
+		public static UnityEvent         onEnemyShipDelayReachedZero { get; } = new UnityEvent();
+		public static ShipNodeTask.Event onNewTask                   { get; } = new ShipNodeTask.Event();
+
+		private void Start() {
+			FishingPlankManager.onPlankFished.AddListenerOnce(() => plankCount++);
+		}
 
 		public void ResetValues() {
 			_running = false;
@@ -55,10 +60,16 @@ namespace Ld50.Ships {
 
 		private void Update() {
 			if (!_running) return;
+			_runningTime += Time.deltaTime;
 			UpdateCrewMorale();
+			UpdateFishing();
 			UpdateShipSpeed();
 			UpdateEnemyShipDelay();
 			UpdateSinking();
+		}
+
+		private void UpdateFishing() {
+			_rod.SetInUse(_tasks.Any(t => t.type == ShipNodeTask.Type.FishPlanks && t.status == ShipNodeTask.Status.InProgress));
 		}
 
 		private void UpdateSinking() {
@@ -90,13 +101,29 @@ namespace Ld50.Ships {
 				: Mathf.Clamp(morale - Time.deltaTime * _moraleBonus, _minMorale, _maxMorale);
 		}
 
-		public void CreateNewTask(ShipNodeTask.Type type, Vector2 position) {
-			var newTask = Instantiate(_taskNodePrefab, position, Quaternion.identity, transform);
-			newTask.Reset(type);
+		public ShipNodeTask CreateNewTask(ShipNodeTask.Type type, Vector2 localPosition) {
+			var newTask = Instantiate(_taskNodePrefab, transform);
+			newTask.transform.localPosition = localPosition;
+			var interactionText = newTask.interactionTexts.Where(t => _tasks.All(u => u.interactableText != t)).Random();
+			newTask.Reset(type, interactionText);
 			_tasks.Add(newTask);
+			newTask.onCompleted.AddListenerOnce(() => _tasks.Remove(newTask));
+			onNewTask.Invoke(newTask);
+			return newTask;
 		}
 
 		[ContextMenu("Find All Tasks")] private void FindAllTasks() => _tasks = FindObjectsOfType<ShipNodeTask>(true).ToList();
 		public IEnumerable<ShipNodeTask> GetAllAvailableTasks() => _tasks.Where(t => t.type != ShipNodeTask.Type.None && t.status == ShipNodeTask.Status.Waiting);
+
+		public void ConsumePlank() => plankCount--;
+
+		public void Run() {
+			_running = true;
+			_runningTime = 0;
+		}
+
+		public void Stop() {
+			_running = false;
+		}
 	}
 }

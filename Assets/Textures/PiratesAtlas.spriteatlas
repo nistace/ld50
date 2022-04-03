@@ -165,15 +165,29 @@ SpriteAtlas:
   - {fileID: 2000450107766317513, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: -4613027546025783011, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: 3150159208361295692, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: 5902428384106596237, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: -3127087311394205879, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: 6206227320102701240, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: -3982174270594475098, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: -7773315782215424989, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: 5823351410049097144, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: 4013185584276381247, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: -4971167738386771554, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: 8252652228749828981, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: 4394508051410891830, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: -3775310119720223387, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: -8619551784079052894, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: -4515525564305162492, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: 476825286322093328, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: -2911488348854300382, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: -7417590220926661977, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: -1139819261393047520, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: -6123564054768132720, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: -2090093095795079099, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: 2272961061060886496, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: 1389093147522940103, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: -1489718474010917525, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
+  - {fileID: 4363161834789119947, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   - {fileID: -1702467305752774161, guid: 6eaffe4bd78bf5146bb409b6f4c46dcd, type: 3}
   m_PackedSpriteNamesToIndex:
   - pirates_91
@@ -292,15 +306,29 @@ SpriteAtlas:
   - pirates_122
   - pirates_125
   - pirates_124
+  - pirates_127
+  - pirates_126
+  - pirates_129
+  - pirates_128
   - pirates_2
   - pirates_3
+  - pirates_138
   - pirates_0
+  - pirates_139
   - pirates_1
+  - pirates_136
   - pirates_6
+  - pirates_137
   - pirates_7
+  - pirates_134
   - pirates_4
+  - pirates_135
   - pirates_5
+  - pirates_132
+  - pirates_133
+  - pirates_130
   - pirates_8
+  - pirates_131
   - pirates_9
   m_RenderDataMap: {}
   m_Tag: PiratesAtlas

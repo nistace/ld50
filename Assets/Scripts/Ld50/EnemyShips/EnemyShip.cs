@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using Utils.Audio;
 
 namespace Ld50 {
 	public class EnemyShip : MonoBehaviour {
@@ -39,9 +40,12 @@ namespace Ld50 {
 			yield return new WaitForSeconds(_hitDelay);
 			for (var i = 0; i < _canons.Length; ++i) {
 				if (hits > Random.Range(0, _canons.Length - i)) {
-					Debug.Log($"Hit {i}");
+					AudioManager.Sfx.PlayRandom("hit");
 					hits--;
 					onHitShot.Invoke();
+				}
+				else if (Random.value < .3f) {
+					AudioManager.Sfx.PlayRandom("missed");
 				}
 				yield return new WaitForSeconds(_canonShootDelay);
 			}

@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 8}
-  m_SizeDelta: {x: 360, y: 128}
+  m_SizeDelta: {x: 240, y: 128}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &4365972999130783502
 CanvasRenderer:
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 16
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -207,11 +207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4196508888566583306, guid: 0e7e8f8c6741a694ca8a0fa226e3d6ce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -405
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4196508888566583306, guid: 0e7e8f8c6741a694ca8a0fa226e3d6ce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4196508888566583306, guid: 0e7e8f8c6741a694ca8a0fa226e3d6ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -227,7 +227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4196508888566583307, guid: 0e7e8f8c6741a694ca8a0fa226e3d6ce, type: 3}
       propertyPath: m_Name
-      value: InteractionItem
+      value: InteractionItemOver
       objectReference: {fileID: 0}
     - target: {fileID: 4196508888566583308, guid: 0e7e8f8c6741a694ca8a0fa226e3d6ce, type: 3}
       propertyPath: m_Color.b
@@ -279,3 +279,4 @@ MonoBehaviour:
   _follow: {fileID: 1616704263347837141}
   _text: {fileID: 8946285622586754419}
   _highlightColor: {r: 1, g: 0.5, b: 0, a: 1}
+  _over: 1

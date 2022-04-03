@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Ld50.Ships;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -18,6 +19,12 @@ namespace Ld50.Text {
 		public static void SetOptions(IEnumerable<ITextInteractable> options) {
 			TextInputManager.options.Clear();
 			TextInputManager.options.AddRange(options.Select(t => new TextOption(t)));
+		}
+
+		public static ITextInteractableOption AddOption(ITextInteractable interactable) {
+			var newOption = new TextOption(interactable);
+			options.Add(newOption);
+			return newOption;
 		}
 
 		private void Update() {
