@@ -17,6 +17,9 @@ namespace Ld50.Scenes.Game.Ui {
 
 		private void Awake() {
 			instance = this;
+			activeItems.Clear();
+			overPool.Clear();
+			underPool.Clear();
 		}
 
 		public static void HideAll() {

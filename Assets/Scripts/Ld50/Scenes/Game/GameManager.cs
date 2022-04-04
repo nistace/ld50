@@ -1,8 +1,13 @@
 using System;
+using System.Collections;
+using System.Globalization;
+using System.Linq;
+using Ld50.Scenes.CommonUi;
 using Ld50.Scenes.Game.Ui;
 using Ld50.Ships;
 using Ld50.Text;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Utils.Audio;
 using Utils.Extensions;
 using Utils.Libraries;
@@ -15,16 +20,26 @@ namespace Ld50.Scenes.Game {
 		[SerializeField] protected EnemyShip _enemyShip;
 		[SerializeField] protected int       _maxHitsPerEnemyShip = 8;
 		[SerializeField] protected float     _difficulty          = .1f;
+		[SerializeField] protected GameUi    _ui;
+		[SerializeField] protected string[]  _gameOverSayings;
 
 		private Pirate instructionTarget { get; set; }
+		private bool   gameOver          { get; set; }
 
-		private void Start() {
+		private void Start() => StartCoroutine(FadeInAndInitialize());
+
+		private IEnumerator FadeInAndInitialize() {
 			Ship.pathSystem.Initialize();
 			Ship.taskManager.ResetValues();
-			Ship.taskManager.Run();
 			ShipTaskManager.onEnemyShipDelayReachedZero.AddListenerOnce(SpawnEnemyShip);
 			EnemyShip.onHitShot.AddListenerOnce(Ship.AddHole);
 			Pirate.onImpossibleTask.AddListenerOnce(HandlePirateHasImpossibleTask);
+			InteractionManagerUi.HideMarker();
+			InteractionManagerUi.HideAll();
+
+			yield return StartCoroutine(TransitionScreenUi.Fade(0, 1));
+
+			Ship.taskManager.Run();
 			TextInputManager.listening = true;
 			ListenPirateName();
 		}
@@ -39,7 +54,6 @@ namespace Ld50.Scenes.Game {
 		private int GetRandomHitsByEnemyShip() {
 			var sqrtTime = Mathf.Sqrt(Ship.taskManager.runningTime);
 			for (var i = 1; i < _maxHitsPerEnemyShip; ++i) {
-				Debug.Log("Changes of " + i + " hits:" + i / (_difficulty * sqrtTime));
 				if (Random.value < i / (_difficulty * sqrtTime)) {
 					return i;
 				}
@@ -85,10 +99,53 @@ namespace Ld50.Scenes.Game {
 		}
 
 		private void Update() {
+			if (gameOver) return;
 			if (Ship.y < Ship.gameOverY) {
-				Ship.taskManager.Stop();
-				Debug.Log($"Game Over, distance travelled: {Ship.taskManager.distanceTravelled:0.0}m");
+				StartCoroutine(PlayGameOver());
 			}
+		}
+
+		private IEnumerator PlayGameOver() {
+			gameOver = true;
+			TextInputManager.listening = false;
+			Ship.taskManager.Stop();
+			Ship.ForceToSink();
+			foreach (var pirate in _pirates) pirate.SwimToTheSurface();
+			_captain.SwimToTheSurface();
+
+			TextInputManager.onInteractableSpelled.RemoveAllListeners();
+			ShipTaskManager.onNewTask.RemoveAllListeners();
+			InteractionManagerUi.HideAll();
+			Debug.Log($"Game Over, distance travelled: {Ship.taskManager.distanceTravelled:0.0}m");
+			while (!_captain.IsSwimmingAtTheSurface()) yield return null;
+			while (_pirates.Any(t => !t.IsSwimmingAtTheSurface())) yield return null;
+			_ui.stats.Close();
+			yield return new WaitForSeconds(3f);
+			var saying = _gameOverSayings.Random();
+			foreach (var c in saying) {
+				SpeechBubbleManagerUi.ShowLetter(_captain.transform, c);
+				AudioManager.Voices.PlayRandom("captain.noise");
+				yield return new WaitForSeconds(.5f);
+			}
+			yield return new WaitForSeconds(1f);
+// TODO
+			_ui.gameOver.Show((int)Ship.taskManager.runningTime, FormatBigNumber((int)Ship.taskManager.distanceToDestination), 0, string.Empty);
+
+			_ui.gameOver.onContinueClicked.AddListenerOnce(GoToMenu);
+			yield return null;
+		}
+
+		private void GoToMenu() => StartCoroutine(TransitionToMenu());
+
+		private IEnumerator TransitionToMenu() {
+			yield return StartCoroutine(TransitionScreenUi.Fade(1, 1));
+			SceneManager.LoadScene("Menu");
+		}
+
+		private static string FormatBigNumber(int number) {
+			var nfi = (NumberFormatInfo)CultureInfo.InvariantCulture.NumberFormat.Clone();
+			nfi.NumberGroupSeparator = " ";
+			return number.ToString("#,0", nfi);
 		}
 	}
 }

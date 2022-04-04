@@ -2,7 +2,6 @@
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 using Utils.Extensions;
 
 namespace Ld50.Ships {
@@ -19,8 +18,9 @@ namespace Ld50.Ships {
 		[SerializeField]                        protected float          _baseShipSpeed  = 5f;
 		[SerializeField]                        protected float          _shipSpeedBonus = 1f;
 		[SerializeField]                        protected float          _distanceTravelled;
-		[Header("Enemy Ships"), SerializeField] protected float          _enemyShipDelay           = 30f;
-		[SerializeField]                        protected float          _detectionDelayMultiplier = 1.5f;
+		[SerializeField]                        protected float          _initialDistanceToDestination = 1500000;
+		[Header("Enemy Ships"), SerializeField] protected float          _enemyShipDelay               = 30f;
+		[SerializeField]                        protected float          _detectionDelayMultiplier     = 1.5f;
 		[SerializeField]                        protected float          _nextEnemyShipCooldown;
 		[Header("Planks"), SerializeField]      protected int            _basePlankCount = 4;
 		[SerializeField]                        protected ShipFishingRod _rod;
@@ -29,18 +29,19 @@ namespace Ld50.Ships {
 
 		[SerializeField] protected List<ShipNodeTask> _tasks = new List<ShipNodeTask>();
 
-		public float runningTime          => _runningTime;
-		public float morale               { get; private set; }
-		public float minMorale            => _minMorale;
-		public float maxMorale            => _maxMorale;
-		public float shipSpeed            { get; private set; }
-		public float minShipSpeed         => _minShipSpeed;
-		public float maxShipSpeed         => _maxShipSpeed;
-		public float enemyShipRealDelay   => _nextEnemyShipCooldown * (shipDetectionEnabled ? Mathf.Max(morale * _detectionDelayMultiplier, 1) : 1);
-		public bool  shipDetectionEnabled { get; private set; }
-		public int   plankCount           { get; private set; }
-		public float sinkingSpeed         { get; private set; }
-		public float distanceTravelled    => _distanceTravelled;
+		public float runningTime           => _runningTime;
+		public float morale                { get; private set; }
+		public float minMorale             => _minMorale;
+		public float maxMorale             => _maxMorale;
+		public float shipSpeed             { get; private set; }
+		public float minShipSpeed          => _minShipSpeed;
+		public float maxShipSpeed          => _maxShipSpeed;
+		public float enemyShipRealDelay    => _nextEnemyShipCooldown * (shipDetectionEnabled ? Mathf.Max(morale * _detectionDelayMultiplier, 1) : 1);
+		public bool  shipDetectionEnabled  { get; private set; }
+		public int   plankCount            { get; private set; }
+		public float sinkingSpeed          { get; private set; }
+		public float distanceTravelled     => _distanceTravelled;
+		public float distanceToDestination => _initialDistanceToDestination - distanceTravelled;
 
 		public static UnityEvent         onEnemyShipDelayReachedZero { get; } = new UnityEvent();
 		public static ShipNodeTask.Event onNewTask                   { get; } = new ShipNodeTask.Event();

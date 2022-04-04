@@ -1,4 +1,5 @@
 using System;
+using Ld50.Ships;
 using UnityEngine;
 
 public class SeaBackground : MonoBehaviour {
@@ -12,9 +13,9 @@ public class SeaBackground : MonoBehaviour {
 	public class RendererMovement {
 		[SerializeField] protected SpriteRenderer _renderer;
 		[SerializeField] protected Vector2        _minSize     = new Vector2(32, 32);
-		[SerializeField] protected Vector2        _speed       = new Vector2(1, 0);
-		[SerializeField] protected Vector2        _loopingSize = new Vector2(32, 32);
+		[SerializeField] protected float          _speed       = .1f;
+		[SerializeField] protected float          _loopingSize = 32;
 
-		public void Refresh() => _renderer.size = _minSize + new Vector2(_speed.x * Time.time % _loopingSize.x, _speed.y * Time.time % _loopingSize.y);
+		public void Refresh() => _renderer.size = _minSize + new Vector2((Ship.taskManager.distanceTravelled * _speed) % _loopingSize, 0);
 	}
 }

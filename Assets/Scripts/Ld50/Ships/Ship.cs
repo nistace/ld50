@@ -12,8 +12,10 @@ namespace Ld50.Ships {
 		public static  float           maxY        => instance._maxY;
 		public static  float           gameOverY   => instance._gameOverY;
 
-		[SerializeField] protected float           _minPitch = -5;
-		[SerializeField] protected float           _maxPitch = 5;
+		[SerializeField] protected bool            _forcedToSink;
+		[SerializeField] protected float           _forcedSinkingSpeed = 2;
+		[SerializeField] protected float           _minPitch           = -5;
+		[SerializeField] protected float           _maxPitch           = 5;
 		[SerializeField] protected float           _pitchSpeed;
 		[SerializeField] protected float           _maxY      = -2;
 		[SerializeField] protected float           _gameOverY = -4.5f;
@@ -22,12 +24,14 @@ namespace Ld50.Ships {
 		[SerializeField] protected ShipTaskManager _taskManager;
 		[SerializeField] protected ShipHull        _hull;
 
+		public static void ForceToSink() => instance._forcedToSink = true;
+
 		private void Awake() {
 			instance = this;
 		}
 
 		private void Update() {
-			_y = Mathf.Min(_maxY, _y - taskManager.sinkingSpeed * Time.deltaTime);
+			_y = Mathf.Min(_maxY, _y - (_forcedToSink ? _forcedSinkingSpeed : taskManager.sinkingSpeed) * Time.deltaTime);
 			transform.position = new Vector3(0, _y, 0);
 			transform.rotation = Quaternion.Euler(0, 0, Mathf.Lerp(_minPitch, _maxPitch, (Mathf.Sin(Time.time * _pitchSpeed) + 1) / 2));
 		}

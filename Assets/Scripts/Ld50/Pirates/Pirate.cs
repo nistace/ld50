@@ -4,10 +4,14 @@ using Ld50.Ships;
 using Ld50.Text;
 using UnityEngine;
 using UnityEngine.Events;
+using Utils.Extensions;
 
 public class Pirate : MonoBehaviour, ITextInteractable {
 	public class ImpossibleTaskEvent : UnityEvent<Pirate, ImpossibleTaskReason> { }
 
+	[SerializeField] protected bool           _swimToTheSurface;
+	[SerializeField] protected float          _swimSpeed     = 2;
+	[SerializeField] protected float          _swimYPosition = -.5f;
 	[SerializeField] protected ShipPathNode   _initialNode;
 	[SerializeField] protected ShipNodeTask   _assignment;
 	[SerializeField] protected ShipPath       _path;
@@ -51,7 +55,19 @@ public class Pirate : MonoBehaviour, ITextInteractable {
 		}
 	}
 
+	public void SwimToTheSurface() {
+		transform.SetParent(null);
+		transform.rotation = Quaternion.identity;
+		_renderer.animation = PirateAnimationSet.Animation.Swim;
+		_swimToTheSurface = true;
+	}
+
 	private void Update() {
+		if (_swimToTheSurface) {
+			transform.position = Vector3.MoveTowards(transform.position, transform.position.With(y: _swimYPosition), _swimSpeed * Time.deltaTime);
+			return;
+		}
+
 		if (!_assignment) return;
 		if (_path == null) return;
 		if (_path.destinationReached) {
@@ -86,6 +102,8 @@ public class Pirate : MonoBehaviour, ITextInteractable {
 		_renderer.animation = GetLinkAnimation(_path.nextNodeLinkType);
 		position = Vector2.MoveTowards(position, _path.nextNodeLocalPosition, Ship.taskManager.morale * _speed * Time.deltaTime);
 	}
+
+	public bool IsSwimmingAtTheSurface() => _swimToTheSurface && Mathf.Abs(transform.position.y - _swimYPosition) < .1f;
 
 	private static PirateAnimationSet.Animation GetTaskAnimation(ShipNodeTask.Type shipTaskType) {
 		switch (shipTaskType) {

@@ -1,4 +1,3 @@
-using Ld50.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,8 +27,8 @@ namespace Ld50.Scenes.Game.Ui {
 			displayUntil = Time.time + _ideaTime;
 		}
 
-		public void DisplayLetter(char lastLetter) {
-			_text.text = $"{TextInputManager.lastLetter}";
+		public void DisplayLetter(char letter) {
+			_text.text = $"{letter}";
 			idea = false;
 			displayUntil = Time.time + _letterTime;
 		}

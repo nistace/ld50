@@ -25,13 +25,17 @@ namespace Ld50.Scenes.Game.Ui {
 		private void HandleInteractableSpelled(ITextInteractable idea) => _captainBubble.DisplayIdea(idea.interactableIdeaSprite);
 		private void HandleNewLetterEntered() => _captainBubble.DisplayLetter(TextInputManager.lastLetter);
 
-		public static void ShowIdea(Transform source, Sprite idea) {
+		public static void ShowIdea(Transform source, Sprite idea) => GetBubble(source).DisplayIdea(idea);
+
+		private static SpeechBubbleUi GetBubble(Transform source) {
 			if (!otherBubbles.TryFirst(t => t.source == source, out var bubble) && !otherBubbles.TryFirst(t => !t.visible, out bubble)) {
 				bubble = Instantiate(instance._bubblePrefab, instance.transform);
 				otherBubbles.Add(bubble);
 			}
 			bubble.source = source;
-			bubble.DisplayIdea(idea);
+			return bubble;
 		}
+
+		public static void ShowLetter(Transform source, char c) => GetBubble(source).DisplayLetter(c);
 	}
 }

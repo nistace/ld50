@@ -1,10 +1,12 @@
+using System;
 using Ld50.Ships;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Utils.Extensions;
+using Utils.Ui;
 
-public class StatsUi : MonoBehaviour {
+public class StatsUi : PanelUi {
 	[SerializeField] protected Image    _moraleBarFill;
 	[SerializeField] protected Image    _shipSpeedBarFill;
 	[SerializeField] protected TMP_Text _planksText;
@@ -12,6 +14,11 @@ public class StatsUi : MonoBehaviour {
 	[SerializeField] protected Image    _waterBarFill;
 	[SerializeField] protected Image[]  _waterFillSpeedImages;
 	[SerializeField] protected float    _waterFillSpeedImageOffset = .2f;
+	[SerializeField] protected TMP_Text _destinationText;
+
+	private void Start() {
+		Open();
+	}
 
 	private void Update() {
 		_moraleBarFill.fillAmount = Ship.taskManager.morale.Remap(Ship.taskManager.minMorale, Ship.taskManager.maxMorale, 0, 1);
@@ -24,5 +31,6 @@ public class StatsUi : MonoBehaviour {
 			var speedRequirement = _waterFillSpeedImageOffset * (i - _waterFillSpeedImages.Length / 2f);
 			_waterFillSpeedImages[i].enabled = speedRequirement > 0 && Ship.taskManager.sinkingSpeed >= speedRequirement || speedRequirement < 0 && Ship.taskManager.sinkingSpeed <= speedRequirement;
 		}
+		_destinationText.text = $@"Destination {Ship.taskManager.distanceToDestination / 1000:0000.00}km";
 	}
 }
