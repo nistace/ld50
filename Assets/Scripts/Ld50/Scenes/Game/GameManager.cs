@@ -11,6 +11,7 @@ using UnityEngine.SceneManagement;
 using Utils.Audio;
 using Utils.Extensions;
 using Utils.Libraries;
+using Web;
 using Random = UnityEngine.Random;
 
 namespace Ld50.Scenes.Game {
@@ -128,8 +129,16 @@ namespace Ld50.Scenes.Game {
 				yield return new WaitForSeconds(.5f);
 			}
 			yield return new WaitForSeconds(1f);
-// TODO
-			_ui.gameOver.Show((int)Ship.taskManager.runningTime, FormatBigNumber((int)Ship.taskManager.distanceToDestination), 0, string.Empty);
+
+			PostScoreResult sendScoreResult = null;
+			Leaderboard leaderboard = null;
+			yield return StartCoroutine(WebManager.SendScore(Pirate.captainsName, (int)Ship.taskManager.distanceTravelled, t => sendScoreResult = t));
+			yield return StartCoroutine(WebManager.GetLeaderBoard(t => leaderboard = t));
+
+			var ranking = leaderboard.result.IndexWhere(t => t.id == sendScoreResult.id);
+			var previous = ranking == 0 ? null : leaderboard.result[0];
+			_ui.gameOver.Show((int)Ship.taskManager.runningTime, (int)Ship.taskManager.distanceTravelled, FormatBigNumber((int)Ship.taskManager.distanceToDestination), ranking,
+				previous == null ? string.Empty : $"{previous.name} was able to travel {previous.score} meters");
 
 			_ui.gameOver.onContinueClicked.AddListenerOnce(GoToMenu);
 			yield return null;

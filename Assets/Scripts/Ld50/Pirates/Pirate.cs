@@ -32,6 +32,7 @@ public class Pirate : MonoBehaviour, ITextInteractable {
 	}
 
 	public static ImpossibleTaskEvent onImpossibleTask { get; } = new ImpossibleTaskEvent();
+	public static string              captainsName     { get; set; }
 
 	private void Start() {
 		position = _initialNode.position;
